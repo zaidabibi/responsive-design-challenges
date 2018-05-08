@@ -1,0 +1,51 @@
+/* this is used to style my links */
+
+a{
+  color:hotpink;
+}
+
+
+/* ---------------------------------------------- */
+.grid-container{
+display: grid;
+border-radius: 2px solid black;
+grid-template-columns: 1fr 1fr ;
+font-family: 'Oswald', sans-serif;
+font-size:55px;
+
+}
+/* this class was created to style my article */
+.one{
+width: 99%;
+grid-column: 1/2;
+}
+/* i have created this class to style my images */
+.two{
+  width: 99%;
+  grid-column: 2/3;
+
+}
+
+h1{
+  font-size: 33px;
+}
+
+/* ------------------------------------------------------ */
+
+@media only screen and (min-width:1218px) {
+  .grid-container{
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width:769px) {
+  .grid-container{
+    font-size: 45px;
+  }
+}
+
+@media only screen and (min-width:360px) {
+  .grid-container{
+    font-size: 55px;
+  }
+}

@@ -1,0 +1,395 @@
+/*layout of my page  */
+.grid-container{
+  display:grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-auto-rows: 30px;
+  grid-gap: 10px;
+
+background-size: cover;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+
+  /*page layout according to items  */
+  .first{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 9;
+border: 2px solid black;
+/* background-image: url(../images/criminal_minds.jfif);
+background-size: cover; */
+
+}
+
+.criminal{
+  width: 100%;
+  height :100%
+}
+.suits{
+  width: 100%;
+  height :100%
+}
+.chicago{
+  width: 100%;
+  height :100%
+}
+.ncis{
+  width: 100%;
+  height :100%
+}
+.stitchers{
+  width: 100%;
+  height :100%
+}
+
+
+  .second{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 9;
+
+
+
+}
+  .third{
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 9;
+
+
+}
+  .fourth{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 10;
+    grid-row-end: 19;
+
+
+
+
+}
+  .fifth{
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 10;
+    grid-row-end: 19;
+
+
+
+
+}
+  .sixth{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 10;
+    grid-row-end: 19;
+
+
+}
+  .seventh{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 10;
+    grid-row-end: 19;
+
+
+}
+
+h3{
+  text-align: center;
+  color: red;
+}
+
+body{
+  margin: 0px;
+  background-image: url(../images/net.png);
+  background-size: cover;
+}
+footer{
+  background-color:black;
+  margin:0;
+
+}
+/*mobile view  */
+@media screen and (min-width:360px){
+
+  ul{background-color: red;
+  }
+
+  .first{
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 7;
+border: 2px solid black;
+}
+.criminal{
+  width:100%;
+  height:100%;
+}
+.second{
+  grid-column-start: 1;
+  grid-column-end: 11;
+  grid-row-start: 7;
+  grid-row-end: 13;
+border: 2px solid black;
+}
+.suits{
+  width:100%;
+  height:100%;
+}
+.third{
+  grid-column-start: 1;
+  grid-column-end: 11;
+  grid-row-start: 13;
+  grid-row-end: 19;
+border: 2px solid black;
+}
+.chicago{
+  height: 100%;
+  width: 100%;
+}
+.fourth{
+  grid-column-start: 1;
+  grid-column-end: 11;
+  grid-row-start: 19;
+  grid-row-end: 25;
+border: 2px solid black;
+}
+.ncis{
+  width: 100%;
+  height:100%;
+}
+.fifth{
+  grid-column-start: 1;
+  grid-column-end: 11;
+  grid-row-start: 25;
+  grid-row-end: 31;
+border: 2px solid black;
+}
+.stitchers{
+  height: 100%;
+  width: 100%;
+}
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+
+
+
+ul{
+  background-color:red;
+
+}
+.first{
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 7;
+border: 2px solid black;
+}
+.criminal{
+width:100%;
+height:100%;
+}
+.second{
+grid-column-start: 5;
+grid-column-end: 11;
+grid-row-start: 7;
+grid-row-end: 13;
+border: 2px solid black;
+}
+.suits{
+width:100%;
+height:100%;
+}
+.third{
+grid-column-start: 1;
+grid-column-end: 7;
+grid-row-start: 13;
+grid-row-end: 19;
+border: 2px solid black;
+}
+.chicago{
+height: 100%;
+width: 100%;
+}
+.fourth{
+grid-column-start: 5;
+grid-column-end: 11;
+grid-row-start: 19;
+grid-row-end: 25;
+border: 2px solid black;
+}
+.ncis{
+width: 100%;
+height:100%;
+}
+.fifth{
+grid-column-start: 1;
+grid-column-end: 7;
+grid-row-start: 25;
+grid-row-end: 31;
+border: 2px solid black;
+}
+.stitchers{
+height: 100%;
+width: 100%;
+}
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  ul{
+    background-color:red;
+
+  }
+  .first{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 15;
+  border: 2px solid black;
+  }
+  .criminal{
+  width:100%;
+  height:100%;
+  }
+  .second{
+  grid-column-start: 6;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 15;
+  border: 2px solid black;
+  }
+  .suits{
+  width:100%;
+  height:100%;
+  }
+  .third{
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 15;
+  grid-row-end: 26;
+  border: 2px solid black;
+  }
+  .chicago{
+  height: 100%;
+  width: 100%;
+  }
+  .fourth{
+  grid-column-start: 6;
+  grid-column-end: 11;
+  grid-row-start: 15;
+  grid-row-end: 26;
+  border: 2px solid black;
+  }
+  .ncis{
+  width: 100%;
+  height:100%;
+  }
+  .fifth{
+  grid-column-start: 1;
+  grid-column-end: 11;
+  grid-row-start: 26;
+  grid-row-end: 36;
+  border: 2px solid black;
+  }
+  .stitchers{
+  height: 100%;
+  width: 100%;
+  }
+  }
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media screen and (min-width: 1200px) {
+     body { background-color: orange;
+     }
+     .first{
+       grid-column-start: 1;
+       grid-column-end: 6;
+       grid-row-start: 1;
+       grid-row-end: 15;
+     border: 2px solid black;
+     }
+     .criminal{
+     width:100%;
+     height:100%;
+     }
+     .second{
+     grid-column-start: 6;
+     grid-column-end: 11;
+     grid-row-start: 1;
+     grid-row-end: 15;
+     border: 2px solid black;
+     }
+     .suits{
+     width:100%;
+     height:100%;
+     }
+     .third{
+     grid-column-start: 1;
+     grid-column-end: 6;
+     grid-row-start: 15;
+     grid-row-end: 26;
+     border: 2px solid black;
+     }
+     .chicago{
+     height: 100%;
+     width: 100%;
+     }
+     .fourth{
+     grid-column-start: 6;
+     grid-column-end: 11;
+     grid-row-start: 15;
+     grid-row-end: 26;
+     border: 2px solid black;
+     }
+     .ncis{
+     width: 100%;
+     height:100%;
+     }
+     .fifth{
+     grid-column-start: 1;
+     grid-column-end: 11;
+     grid-row-start: 26;
+     grid-row-end: 40;
+     border: 2px solid black;
+     }
+     .stitchers{
+     height: 100%;
+     width: 100%;
+     }
+
+
+
+
+
+
+
+
+  }
